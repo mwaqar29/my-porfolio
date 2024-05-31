@@ -5,6 +5,61 @@ export const navItems = [
   { name: "Contact", link: "#contact" },
 ];
 
+export const techNamesHeroSection = [
+  {
+    value: "Next.js",
+    color: "#fff",
+  },
+  {
+    value: "React",
+    color: "#00d8ff",
+  },
+  {
+    value: "Vue",
+    color: "#42b883",
+  },
+  {
+    value: "Angular",
+    color: "#dd1b16",
+  },
+  {
+    value: "Node.js",
+    color: "#44883e",
+  },
+  {
+    value: "Git",
+    color: "#f14e32",
+  },
+  {
+    value: "Typescript",
+    color: "#3178c6",
+  },
+  {
+    value: "Javascript",
+    color: "#f7df1e",
+  },
+  {
+    value: "Tailwind",
+    color: "#38bdf8",
+  },
+  {
+    value: "Bootstrap",
+    color: "#712cf9",
+  },
+  {
+    value: "SCSS",
+    color: "#bf4080",
+  },
+  {
+    value: "CSS3",
+    color: "#2965f1",
+  },
+  {
+    value: "HTML5",
+    color: "#f06529",
+  },
+];
+
 export const gridItems = [
   {
     id: 1,

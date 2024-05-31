@@ -203,7 +203,7 @@ const config = {
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
         "fade-in-down": "fade-in-down 1s ease-out forwards",
         "meteor-effect": "meteor 5s linear infinite",
-        "fade-in-up": "fade-in-up 0.75s ease-out forwards",
+        "fade-in-up": "fade-in-up 0.75s ease-out 1.5s forwards",
         "fade-in-down-left": "fade-in-down-left 1.5s ease-out forwards",
         aurora: "aurora 60s linear infinite",
       },

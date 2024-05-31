@@ -6,10 +6,12 @@ import { SparklesCore } from "./ui/Sparkles";
 import { Meteors } from "./ui/Meteors";
 import { AuroraBackground } from "./ui/AuroraBackground";
 import { motion } from "framer-motion";
+import { FlipWords } from "./ui/FlipWords";
+import { techNamesHeroSection } from "@/data";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-[4.6rem] pt-32">
       {/* <Spotlight
         className="top-0 left-20 md:left-40 lg:top-10 lg:left-50 h-screen"
         fill="blueviolet"
@@ -65,16 +67,16 @@ const Hero = () => {
 
       <div className="flex justify-start relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-start justify-center gap-5">
-          <h2 className="animate-fade-in-up tracking-widest text-sm text-left text-blue-100 max-w-80">
+          <h2 className="animate-fade-in-up opacity-0 tracking-widest text-sm text-left text-blue-100 max-w-80">
             <span style={{ color: "mediumpurple" }}>Hi,</span> my name is
           </h2>
 
-          <div className="animate-fade-in-up font-bold leading-snug tracking-wide text-left text-[40px] md:text-5xl lg:text-6xl">
+          <div className="animate-fade-in-up opacity-0 font-bold leading-snug tracking-wide text-left text-[40px] md:text-5xl lg:text-6xl">
             Mohammed <span style={{ color: "mediumpurple" }}>Waqar</span> Ali
             <span style={{ color: "mediumpurple" }}>.</span>
           </div>
 
-          <div className="animate-fade-in-up font-bold leading-snug tracking-wide text-left md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+          <div className="animate-fade-in-up opacity-0 font-bold leading-snug tracking-wide text-left md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             I&apos;m a{" "}
             <span style={{ color: "mediumpurple" }}>Frontend Developer</span>{" "}
             with <span style={{ color: "mediumpurple" }}>5 years</span> of
@@ -82,14 +84,11 @@ const Hero = () => {
             <span style={{ color: "mediumpurple" }}>
               seamless user experiences
             </span>{" "}
-            using{" "}
-            <span style={{ color: "mediumpurple" }}>
-              modern web technologies
-            </span>
-            .
+            using
+            <FlipWords words={techNamesHeroSection} />
           </div>
 
-          <a className="animate-fade-in-up" href="#about">
+          <a className="animate-fade-in-up opacity-0" href="#about">
             <MagicButton
               title="About me"
               icon={<FaLocationArrow />}
