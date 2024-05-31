@@ -1,9 +1,8 @@
 import type { Config } from "tailwindcss";
 
-import svgToDataUri from 'mini-svg-data-uri';
-import colors from 'tailwindcss/colors';
-import flattenColorPalette from 'tailwindcss/lib/util/flattenColorPalette';
-
+import svgToDataUri from "mini-svg-data-uri";
+import colors from "tailwindcss/colors";
+import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
 
 const config = {
   darkMode: ["class"],
@@ -143,6 +142,34 @@ const config = {
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
+        "fade-in-down": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(-100%)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+        "fade-in-up": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(100%)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+        meteor: {
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+          "70%": { opacity: "1" },
+          "100%": {
+            transform: "rotate(215deg) translateX(-500px)",
+            opacity: "0",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -156,6 +183,9 @@ const config = {
         fifth: "moveInCircle 20s ease infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        "fade-in-down": "fade-in-down 1s ease-out forwards",
+        "meteor-effect": "meteor 5s linear infinite",
+        "fade-in-up": "fade-in-up 0.75s ease-out forwards",
       },
     },
   },
