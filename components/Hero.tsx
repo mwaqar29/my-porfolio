@@ -1,13 +1,16 @@
+"use client";
 import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { FaLocationArrow } from "react-icons/fa6";
 import { SparklesCore } from "./ui/Sparkles";
 import { Meteors } from "./ui/Meteors";
+import { AuroraBackground } from "./ui/AuroraBackground";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <div className="pb-20 pt-36">
-      <Spotlight
+      {/* <Spotlight
         className="top-0 left-20 md:left-40 lg:top-10 lg:left-50 h-screen"
         fill="blueviolet"
       ></Spotlight>
@@ -18,7 +21,20 @@ const Hero = () => {
       <Spotlight
         className="top-0 left-28 md:-top-1 md:left-48 lg:top-28 lg:left-80 h-[80vh] w-[70vw]"
         fill="dodgerblue"
-      ></Spotlight>
+      ></Spotlight> */}
+
+      <AuroraBackground className="animate-fade-in-down-left absolute top-0 left-0 w-full">
+        <motion.div
+          initial={{ opacity: 0.0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}
+          className="relative flex flex-col gap-4 items-center justify-center px-4"
+        ></motion.div>
+      </AuroraBackground>
 
       {/* Sparkles */}
       <div className="absolute top-0 left-0 w-full h-[100vh]">
@@ -54,14 +70,23 @@ const Hero = () => {
           </h2>
 
           <div className="animate-fade-in-up font-bold leading-snug tracking-wide text-left text-[40px] md:text-5xl lg:text-6xl">
-            Mohammed Waqar Ali<span style={{ color: "mediumpurple" }}>.</span>
+            Mohammed <span style={{ color: "mediumpurple" }}>Waqar</span> Ali
+            <span style={{ color: "mediumpurple" }}>.</span>
           </div>
 
           <div className="animate-fade-in-up font-bold leading-snug tracking-wide text-left md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            I am a{" "}
+            I&apos;m a{" "}
             <span style={{ color: "mediumpurple" }}>Frontend Developer</span>{" "}
             with <span style={{ color: "mediumpurple" }}>5 years</span> of
-            experience.
+            experience, passionate about creating{" "}
+            <span style={{ color: "mediumpurple" }}>
+              seamless user experiences
+            </span>{" "}
+            using{" "}
+            <span style={{ color: "mediumpurple" }}>
+              modern web technologies
+            </span>
+            .
           </div>
 
           <a className="animate-fade-in-up" href="#about">

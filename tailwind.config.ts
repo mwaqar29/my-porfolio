@@ -170,6 +170,24 @@ const config = {
             opacity: "0",
           },
         },
+        aurora: {
+          from: {
+            backgroundPosition: "50% 50%, 50% 50%",
+          },
+          to: {
+            backgroundPosition: "350% 50%, 350% 50%",
+          },
+        },
+        "fade-in-down-left": {
+          "0%": {
+            opacity: "0",
+            transform: "translate(10%, -100%)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translate(0, 0)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -186,6 +204,8 @@ const config = {
         "fade-in-down": "fade-in-down 1s ease-out forwards",
         "meteor-effect": "meteor 5s linear infinite",
         "fade-in-up": "fade-in-up 0.75s ease-out forwards",
+        "fade-in-down-left": "fade-in-down-left 1.5s ease-out forwards",
+        aurora: "aurora 60s linear infinite",
       },
     },
   },
