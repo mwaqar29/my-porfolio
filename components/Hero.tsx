@@ -1,11 +1,9 @@
-"use client";
 import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { FaLocationArrow } from "react-icons/fa6";
 import { SparklesCore } from "./ui/Sparkles";
 import { Meteors } from "./ui/Meteors";
 import { AuroraBackground } from "./ui/AuroraBackground";
-import { motion } from "framer-motion";
 import { FlipWords } from "./ui/FlipWords";
 import { techNamesHeroSection } from "@/data";
 
@@ -25,18 +23,7 @@ const Hero = () => {
         fill="dodgerblue"
       ></Spotlight> */}
 
-      <AuroraBackground className="animate-fade-in-down-left absolute top-0 left-0 w-full">
-        <motion.div
-          initial={{ opacity: 0.0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{
-            delay: 0.3,
-            duration: 0.8,
-            ease: "easeInOut",
-          }}
-          className="relative flex flex-col gap-4 items-center justify-center px-4"
-        ></motion.div>
-      </AuroraBackground>
+      <AuroraBackground className="animate-fade-in-down-left absolute top-0 left-0 w-full"></AuroraBackground>
 
       {/* Sparkles */}
       <div className="absolute top-0 left-0 w-full h-[100vh]">
